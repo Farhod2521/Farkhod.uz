@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhod</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/s.css' %}">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="{% url 'home' %}"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="{% url 'about' %}"> <i class="fas fa-user"></i> <span>about</span> </a>
+    <a href="{% url 'port' %}"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+    
+    <a href="{% url 'contact' %}"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="image">
+        <img src="{% static 'image/123.jpg' %}" alt="">
+    </div>
+
+    <div class="content">
+        <h3>hi, i am Farhod</h3>
+        <span>Backend developer</span>
+        <p>i am developing a website in django restFramework API. I have also done big projects in html css and javascripts</p>
+        <a href="{% url 'about' %}" class="btn"> about me <i class="fas fa-user"></i> </a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+</body>
+</html>

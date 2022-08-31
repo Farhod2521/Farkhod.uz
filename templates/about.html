@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhod</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/s.css' %}">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="{% url 'home' %}"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="{% url 'about' %}"> <i class="fas fa-user"></i> <span>about</span> </a>
+    <a href="{% url 'port' %}"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+    
+    <a href="{% url 'contact' %}"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- about section starts  -->
+
+<section class="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="info-container">
+
+            <h1>personal info</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> <span>name : </span> Farhod Abdikarimov </h3>
+                    <h3> <span>age : </span> 22 </h3>
+                    <h3> <span>email : </span> abdikarimovfarhod86@gmail.com </h3>
+                    <h3> <span>phone : </span> +998 99 425 25 21</h3>
+                    <h3> <span>telegram : </span> @Farhod_ab </h3>
+                    <h3> <span>address : </span> uzbekiston, Surxandaryo  </h3>
+                </div>
+    
+                <div class="box">
+                    <h3> <span>freelance : </span> available </h3>
+                    <h3> <span>skill : </span> Backend </h3>
+                    <h3> <span>experience : </span> 1.5 years </h3>
+                    <h3> <span>language : </span> uzbek, english </h3>
+                </div>
+
+            </div>
+
+       
+        </div>
+
+        <div class="count-container">
+
+            <div class="box">
+                <h3>1.5+</h3>
+                <p>years of experience</p>
+            </div>
+
+            <div class="box">
+                <h3>200+</h3>
+                <p>happy clients</p>
+            </div>
+
+            <div class="box">
+                <h3>250+</h3>
+                <p>project completed</p>
+            </div>
+
+            <div class="box">
+                <h3>5+</h3>
+                <p>awards won</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- skills section starts  -->
+
+<section class="skills">
+
+    <h1 class="heading"> <span>my</span> skills </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/4990671.png">
+            <h3>python</h3>
+        </div>
+        <div class="box">
+            <img src="images/dj.png">
+            <h3>Django</h3>
+        </div>
+        <div class="box">
+            <img src="images/icon-1.png">
+            <h3>html</h3>
+        </div>
+        <div class="box">
+            <img src="images/icon-2.png">
+            <h3>css</h3>
+        </div>
+        <div class="box">
+            <img src="images/icon-3.png">
+            <h3>javascript</h3>
+        </div>
+        <div class="box">
+            <img src="images/fl.png">
+            <h3>Flutter</h3>
+        </div>
+        
+       
+    </div>
+
+</section>
+
+<!-- skills section ends -->
+
+<!-- education section starts  -->
+
+<section class="education">
+
+    <h1 class="heading"> <span>my</span> education </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2020 - 2021</span>
+            <h3>TATU C++</h3>
+            <p>During these years, I entered TaTu and learned c ++ programming language at university. I got my most basic concepts at university.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2021 - 2022</span>
+            <h3>Python, django telegram bot, sql3, tkinter, and Flutter</h3>
+            <p>During these years I started attending the course and learned python programming language and then started learning jango fremwork and developed many web sites</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- education section ends -->
+
+</body>
+</html>
